@@ -2,7 +2,7 @@ import random, pygame, speech, display, time, math
 
 class Game:
     def __init__(self):
-        self.grid=[[1,2,3],[4,5,6],[7,8,'']]
+        self.grid=[[7,4,1],[8,5,2],['',6,3]]
         self.moves=0
         self.x=0
         self.y=0
@@ -17,7 +17,7 @@ class Game:
             self.moves=0
 
     def didWin(self):
-        won=self.grid==[[1,2,3],[4,5,6],[7,8,'']]
+        won=self.grid==[[7,4,1],[8,5,2],['',6,3]]
         if won:
             display.display_message('congratulations. you won the game.')
             quit()
